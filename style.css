@@ -66,13 +66,9 @@ button {
     background: linear-gradient(135deg, #d4af37 0%, #aa8a2e 100%); /* Gradasi Emas */
     color: #000;
     border: none;
-    padding: 16px;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 800;
+    font-weight: bold;
     cursor: pointer;
-    transition: transform 0.2s, filter 0.3s;
-    margin-bottom: 1.5rem;
+    transition: 0.3s;
 }
 
 button:hover {
