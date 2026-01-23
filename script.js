@@ -66,5 +66,5 @@ function hitung() {
 };
 
 function open_wa() {
-    window.open("https://wa.me/62895388390106")
+    window.open("https://wa.me/62895388390106?text=Halo..%0ASaya%20mau%20bertanya%20soal%20Tas%20Spunbond")
 }
