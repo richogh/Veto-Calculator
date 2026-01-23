@@ -64,3 +64,7 @@ function hitung() {
     document.getElementById("hasil").innerText = `Rp. ${Harga_a.toLocaleString("id-ID")} /pcs`;
     document.getElementById("total").innerText = `Rp. ${Total_bayar.toLocaleString("id-ID")}`;
 };
+
+function open_wa() {
+    window.open("https://wa.me/62895388390106")
+}
