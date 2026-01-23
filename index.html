@@ -4,22 +4,20 @@
     <meta charset="UTF-8">
     <title>Hitung Biaya Sablon</title>
 </head>
+    
 <body>
+    <div class="container">
+        <h2>Hitung Biaya Sablon</h2>
+        <input type="number" id="angka1" placeholder="Banyak Pemesanan (pcs)">
+        <select id="operator"></select>
+        <button onclick="hitung()">Hitung</button>
 
-    <h2>Hitung Biaya Sablon</h2>
-
-    <input type="number" id="angka1" placeholder="Banyak Pemesanan (pcs)">
-    <br><br>
-    <select id="operator"></select>
-    <br><br>
-
-    <button onclick="hitung()">Hitung</button>
-
-    <h3>Harga: <span id="hasil">0</span></h3>
-    <h3>Total: <span id="total">0</span></h3>
-
-    <!-- Hubungkan ke file JS -->
+        <h3>Harga: <span id="hasil">0</span></h3>
+        <h3>Total: <span id="total">0</span></h3>
+    </div>
+    
     <script src="script.js"></script>
-
+    
 </body>
+    
 </html>
