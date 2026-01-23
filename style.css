@@ -1,77 +1,114 @@
 /* style.css */
 
 * {
-    box-sizing: border-box; /* Memastikan padding tidak merusak ukuran elemen */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f0f8ff;
-    margin: 0;
-    
-    /* Menggunakan Flexbox agar konten selalu di tengah layar */
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    /* Background Hitam Pekat dengan gradasi halus */
+    background: radial-gradient(circle, #1a1a1a 0%, #0a0a0a 100%);
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    /* vh (viewport height) memastikan tinggi body sama dengan layar pengguna */
-    min-height: 100vh; 
+    min-height: 100vh;
     padding: 20px;
+    color: #e0e0e0;
 }
 
 .container {
-    background: white;
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background: #121212; /* Hitam Material */
+    padding: 2.5rem;
+    border-radius: 24px;
+    /* Shadow yang dalam agar terlihat melayang (eksklusif) */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    border: 1px solid #333; /* Border tipis agar tegas */
     
-    /* FIT STRATEGY: */
-    width: 100%;       /* Default penuh di layar kecil */
-    max-width: 450px;  /* Batas maksimal agar tidak terlalu lebar di PC */
-    
-    /* Memastikan elemen di dalam tidak meluap */
+    width: 100%;
+    max-width: 450px;
     display: flex;
     flex-direction: column;
 }
 
 h2 {
-    color: #2c3e50;
+    color: #ffffff;
     text-align: center;
-    font-size: clamp(1.2rem, 5vw, 1.8rem); /* Font mengecil otomatis di layar kecil */
-    margin-bottom: 1.5rem;
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
 
-input, select, button {
-    width: 100%;       /* Selalu selebar container */
-    margin-bottom: 1rem;
+/* Styling untuk Input dan Select */
+input, select {
+    width: 100%;
+    margin-bottom: 1.2rem;
     padding: 15px;
     font-size: 1rem;
     border-radius: 12px;
+    background-color: #1e1e1e; /* Abu-abu sangat gelap */
+    border: 1px solid #444;
+    color: #fff;
+    outline: none;
+    transition: all 0.3s ease;
 }
 
-/* Tombol tetap proporsional */
+input:focus, select:focus {
+    border-color: #d4af37; /* Aksen Emas saat fokus */
+    box-shadow: 0 0 8px rgba(212, 175, 55, 0.3);
+}
+
+/* Tombol Premium */
 button {
-    background-color: #00bfff;
-    color: white;
+    width: 100%;
+    background: linear-gradient(135deg, #d4af37 0%, #aa8a2e 100%); /* Gradasi Emas */
+    color: #000;
     border: none;
-    font-weight: bold;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 800;
+    text-transform: uppercase;
     cursor: pointer;
-    transition: 0.3s;
+    transition: transform 0.2s, filter 0.3s;
+    margin-bottom: 1.5rem;
 }
 
-/* Hasil hitungan yang adaptif */
+button:hover {
+    filter: brightness(1.2);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Hasil Output yang Elegan */
 h3 {
-    font-size: 1rem;
-    background: #eef9ff;
-    padding: 15px;
-    border-left: 6px solid #00bfff;
-    border-radius: 8px;
-    word-wrap: break-word; /* Mencegah teks angka keluar dari kotak */
+    font-size: 0.95rem;
+    background: #1a1a1a;
+    padding: 18px;
+    border-radius: 15px;
+    margin-top: 10px;
+    border: 1px dashed #444;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Responsivitas untuk layar sangat kecil (HP jadul) */
-@media (max-width: 320px) {
+#hasil, #total {
+    color: #d4af37; /* Angka berwarna emas */
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Responsivitas */
+@media (max-width: 480px) {
     .container {
-        padding: 1rem;
+        padding: 1.5rem;
+        border-radius: 0; /* Full screen di mobile sangat kecil */
+        height: 100%;
     }
 }
