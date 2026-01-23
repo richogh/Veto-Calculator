@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Download File</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Hitung Biaya Sablon</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Unduh File</h1>
-    <p>Klik tombol di bawah untuk mengunduh file:</p>
-    
-    <!-- Tombol download langsung -->
-    <a href="contoh.txt" download="contoh.txt" class="btn">Download Langsung</a>
 
-    <!-- Tombol download via JavaScript -->
-    <button id="downloadBtn" class="btn">Download via JS</button>
-  </div>
+    <h2>Hitung Biaya Sablon</h2>
 
-  <script src="script.js"></script>
+    <input type="number" id="angka1" placeholder="Banyak Pemesanan (pcs)">
+    <br><br>
+    <select id="operator"></select>
+    <br><br>
+
+    <button onclick="hitung()">Hitung</button>
+
+    <h3>Harga: <span id="hasil">0</span></h3>
+    <h3>Total: <span id="total">0</span></h3>
+
+    <!-- Hubungkan ke file JS -->
+    <script src="script.js"></script>
+
 </body>
 </html>
