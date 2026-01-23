@@ -102,6 +102,12 @@ h3 {
     font-size: 1.2rem;
     font-weight: bold;
 }
+#forbtn {
+    margin-top: 1.5rem;
+    background: none;
+    color: #27bd5e;
+}
+
 
 /* Responsivitas */
 @media (max-width: 480px) {
