@@ -20,7 +20,7 @@ const Lain2 = 300;
 // Kassa, M3, Botol, Stick Eskrim, dll
 
 const Final = Afdruk+Tinta+Lain2;
-const ProfitLusin = 12000;
+const ProfitLusin = 13000;
 const ProfitFlexible = {
     8: ProfitLusin-2000,
     25: ProfitLusin-3500,
