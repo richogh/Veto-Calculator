@@ -29,7 +29,15 @@ function tintaaa() {
     return (Rubber+pr_rb+bi_rb)/125
 };
 function open_wa() {
-    window.open("https://wa.me/62895388390106?text=Halo..%0ASaya%20mau%20bertanya%20soal%20Tas%20Spunbond")
+    const pcs = Number(document.getElementById("angka1").value) || 0;
+    const sz = String(document.getElementById("operator").value);
+
+    if (pcs > 0) {
+        const msg = `Halo..%0ASaya ingin bertanya soal :%0ASize : ${sz}%0AQuantity : ${pcs}`;
+        const url = `https://wa.me/62895388390106?text=${msg}`;
+
+        window.open(url)
+    } else {window.open("https://wa.me/62895388390106?text=Halo..%0ASaya%20mau%20bertanya%20soal%20Tas%20Spunbond")};
 }
 
 
