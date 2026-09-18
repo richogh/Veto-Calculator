@@ -3,16 +3,33 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Kirim pesan whatsapp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 ```
+<title>Kirim pesan whatsapp</title>
+
+<!-- Gambar untuk preview Facebook -->
 <meta property="og:title" content="Kirim pesan whatsapp">
 <meta property="og:description" content="Kirim pesan melalui WhatsApp">
 <meta property="og:image" content="https://picsum.photos/1200/630">
 <meta property="og:type" content="website">
 
-<script>
-</script>
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #000;
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100vh;
+        object-fit: contain;
+    }
+</style>
 ```
 
 </head>
@@ -20,10 +37,13 @@
 <body>
 
 ```
-<img
-    src="https://picsum.photos/1200/630"
-    alt="Preview"
->
+<img src="https://picsum.photos/1200/630" alt="Preview">
+
+<script>
+    setTimeout(function () {
+        window.location.replace("https://wa.me/6281234567890");
+    }, 1000);
+</script>
 ```
 
 </body>
